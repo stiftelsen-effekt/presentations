@@ -51,7 +51,7 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v1
         with:
-          path: accenture-2023
+          path: /
 
       - name: Deploy
         id: deployment
