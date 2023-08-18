@@ -51,7 +51,7 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v1
         with:
-          path: presentations
+          path: presentations/
 
       - name: Deploy
         id: deployment
