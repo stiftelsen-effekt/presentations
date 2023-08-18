@@ -33,7 +33,7 @@ jobs:
         run:  cd accenture-2023 && npm i -g @slidev/cli
 
       - name: Build
-        run: cd accenture-2023 && slidev build --base <name_of_repo>
+        run: cd accenture-2023 && slidev build --base accenture-2023
 
       - uses: actions/configure-pages@v3
 
