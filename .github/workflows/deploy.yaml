@@ -39,7 +39,7 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v1
         with:
-          path: /accenture-2023/dist/
+          path: accenture-2023/dist/
 
       - name: Deploy
         id: deployment
