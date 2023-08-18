@@ -1,0 +1,103 @@
+:root {
+  --slidev-theme-primary: #000;
+  --slidev-theme-background: #000;
+}
+
+#slide-content {
+  background: #000 !important;
+}
+
+.slidev-layout.cover,
+.slidev-layout.intro {
+  @apply h-full grid;
+
+  h1 {
+    @apply text-6xl leading-20;
+  }
+
+  h1 + p {
+    @apply -mt-2 mb-4;
+  }
+
+  p + h2, ul + h2, table + h2 {
+    @apply mt-10;
+  }
+}
+
+html.dark {
+  background: #000;
+}
+
+.slidev-layout {
+    background: #000;
+}
+
+.quote {
+  background: #000;
+  font-size: 2rem;
+  padding-left: 1.5rem;
+  border-left: 0.2rem solid #fafafa;
+}
+
+.quote::before {
+  content: "“";
+}
+
+.quote::after {
+  content: "”";
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  font-size: .8rem;
+
+  .picture {
+    aspect-ratio: 24/31;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+  }
+
+  .name {
+  }
+
+  .role {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+  }
+}
+
+* {
+  font-family: "ES Klarheit Grotesk";
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "ES Klarheit Kurrent";
+}
+
+.effekt-transition-forward-enter-active,
+.effekt-transition-forward-leave-active,
+.effekt-transition-backward-enter-active,
+.effekt-transition-backward-leave-active {
+  transition: all 0.5s ease;
+}
+
+.effekt-transition-forward-enter-from,
+.effekt-transition-forward-leave-to,
+.effekt-transition-backward-enter-from,
+.effekt-transition-backward-leave-to {
+  opacity: 0;
+
+}
+
+.effekt-transition-forward-enter-from,
+.effekt-transition-backward-leave-to {
+  transform: translateY(10%);
+}
+
+.effekt-transition-forward-leave-to,
+.effekt-transition-backward-enter-from {
+  transform: translateY(-10%);
+}
